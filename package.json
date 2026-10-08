@@ -1,0 +1,30 @@
+{
+  "name": "eco-chain-shipping",
+  "version": "1.0.0",
+  "description": "Eco Chain Shipping – Blockchain-Based Sustainable Shipping Management System",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "node server/index.js",
+    "client": "npm --prefix client run dev",
+    "build:client": "npm --prefix client run build",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "node tests/blockchain.test.js"
+  },
+  "keywords": [
+    "blockchain",
+    "logistics",
+    "shipping",
+    "sha256",
+    "merkle-tree",
+    "smart-contract",
+    "proof-of-work"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
