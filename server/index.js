@@ -622,9 +622,9 @@ app.use((req, res, next) => {
   next();
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`=======================================================`);
   console.log(`  Eco Chain Shipping - Blockchain Management System  `);
-  console.log(`  Backend Server running on http://localhost:${PORT} `);
+  console.log(`  Backend Server running on port ${PORT}             `);
   console.log(`=======================================================`);
 });
